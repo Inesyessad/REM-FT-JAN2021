@@ -6,7 +6,8 @@
 
 
 body {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -17,8 +18,9 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     color:white;
     font-size: 5.653rem;
-    
+    font-size: 3rem;
 }
+
 h2 {
     font-size: 3.998rem;
 }
@@ -119,4 +121,80 @@ footer {
 
 .container {
      display: flex;
+}
+
+/* LINKS */
+a:link {
+    background-color: darkblue;
+    text-decoration: none;
+    padding: 10px
+}
+
+a:hover {
+    background-color: darkcyan;
+}
+
+a:visited {
+
+}
+
+a:active {
+    background-color: darkorange;
+}
+
+/* menu links */
+a.menu:link, a.menu:visited {
+    background: none;
+    color:olive;
+
+}
+
+a.menu:hover {
+    color: darkred;
+}
+
+/* header div {
+    border: 2px dashed blue;
+} */
+
+/* links icons */
+
+a.icon:link {
+    background: none;
+}
+
+a.icon:hover {
+    background-color: darkviolet;
+    color:ghostwhite;
+    border-radius: 50%; 
+}
+
+img {
+    filter: contrast(100%);
+    filter: grayscale(50%);
+    filter: saturate(10%);
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* Tablet */
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+    h1 {
+        background-color: blue;
+        font-size: 4.653rem;
+    }
+
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    h1 {
+        background-color:darkmagenta;
+        font-size: 5.653rem;
+    }
+
 }
